@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribbble Sign Up Selection</title>
+    <link rel="stylesheet" href="./finish.css">
+</head>
+<body>
+    <div class="container">
+        <h1>What brings you to Dribbble?</h1>
+        <p>Select the options that best describe you. Don't worry, you can explore other options later.</p>
+        <div class="card-container">
+            <div class="card">
+                <img src="./designer1.png" alt="I'm a designer looking to share my work">
+                <p>I'm a designer looking to share my work</p>
+                <input type="radio" id="designer-share" name="reason" value="designer_share">
+                <label for="designer-share"></label>
+            </div>
+            <div class="card">
+                <img src="./designer2.png" alt="I'm looking to hire a designer">
+                <p>I'm looking to hire a designer</p>
+                <input type="radio" id="hire-designer" name="reason" value="hire_designer">
+                <label for="hire-designer"></label>
+            </div>
+            <div class="card">
+                <img src="./designer3.png" alt="I'm looking for design inspiration">
+                <p>I'm looking for design inspiration</p>
+                <input type="radio" id="design-inspiration" name="reason" value="design_inspiration">
+                <label for="design-inspiration"></label>
+            </div>
+        </div>
+        <button type="button" onclick="nextPage()" disabled id="continue-button">Continue</button>
+        <p class="disclaimer">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+    </div>
+    <script src="./finish.js"></script>
+</body>
+</html>

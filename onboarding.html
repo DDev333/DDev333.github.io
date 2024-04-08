@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Dribbble!</title>
+    <link rel="stylesheet" href="./onboarding.css">
+    <script src="script.js"></script> </head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="#">
+                <img src="dribbble_logo.png" alt="Dribbble Logo">
+            </a>
+            <h1>Welcome! Let's create your profile</h1>
+            <p>Let others get to know you better! You can do these later.</p>
+        </header>
+        <main class="main">
+            <form action="#" class="form" id="signupForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username">
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="youremail@example.com">
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="avatar">Choose an avatar</label>
+                    <input type="file" id="avatar" name="avatar">
+                    <p class="avatar-hint">Upload a JPG, PNG, or GIF. Max size 10MB.</p>
+                </div>
+                <div class="form-group location">
+                    <label for="location">Location (Optional)</label>
+                    <input type="text" id="location" name="location" placeholder="City, State/Country">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-button">Create Account</button>
+                </div>
+                <p class="or-text">or</p>
+                <div class="social-login">
+                    <a href="#" class="social-link facebook">
+                        <i class="fab fa-facebook-f"></i>  Login with Facebook
+                    </a>
+                    <a href="#" class="social-link google">
+                        <i class="fab fa-google"></i>  Login with Google
+                    </a>
+                </div>
+            </form>
+            <p class="disclaimer">This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</p>
+            <p class="art-by">Art by Peter Tarka</p>
+        </main>
+        <div class="next-step" id="nextStep"> <h2>Next Up: Choose Your Interests</h2>
+            <p>Select the design fields you're most interested in.</p>
+            <ul class="interests">
+                <li><button data-interest="web design">Web Design</button></li>
+                <li><button data-interest="ui/ux">UI/UX Design</button></li>
+                <li><button data-interest="graphic design">Graphic Design</button></li>
+                </ul>
+            <button onclick="nextPage()" class="continue-button">Continue</button>
+        </div>
+    </div>
+    <script src="./onboarding.js" crossorigin="anonymous"></script>  </body>
+</html>
